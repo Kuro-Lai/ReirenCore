@@ -2,7 +2,9 @@
     "name": "ReirenCore",
     "rootNamespace": "ReirenCore",
     "references": [
-        "GUID:eec0964c48f6f4e40bc3ec2257ccf8c5"
+        "GUID:eec0964c48f6f4e40bc3ec2257ccf8c5",
+        "GUID:41524c21c95e5fe4dbc5b48bd21995a4",
+        "GUID:2e77701fe0ceda44fb763f03ee704c37"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

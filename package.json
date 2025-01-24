@@ -1,0 +1,13 @@
+{
+  "name": "com.Kuro-Lai.ReirenCore",
+  "version": "1.0.0",
+  "displayName": "ReirenCore",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.Localization": "1.5.4"
+  },
+  "autor": {
+    "name":  "Kuroda-Lai"
+  }
+
+}
