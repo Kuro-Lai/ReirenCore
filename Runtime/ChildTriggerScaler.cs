@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ReirenCore
+namespace Reiren.Core
 {
     /// <summary>
     /// Scalliert alle Childs mit einem Offsetverhältnis um berührende Triggerfunktionen zu vermeiden

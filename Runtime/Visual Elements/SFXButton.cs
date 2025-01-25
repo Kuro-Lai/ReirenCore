@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace ReirenCore.VisualElmenents
+namespace Reiren.Core.VisualElmenents
 {
     using Icons;
     /// <summary>

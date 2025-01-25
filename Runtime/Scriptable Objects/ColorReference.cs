@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ReirenCore.ScriptableObjects
+namespace Reiren.Core.ScriptableObjects
 {
     [CreateAssetMenu(menuName = "ReirenCore/Color32 Reference")]
     public class ColorReference : ScriptableObject

@@ -1,4 +1,4 @@
-namespace ReirenCore.Enums
+namespace Reiren.Core.Enums
 {
     [System.Flags]
     public enum Facing2D

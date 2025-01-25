@@ -3,7 +3,7 @@ using System.Text;
 using System;
 using UnityEngine;
 
-namespace ReirenCore.ExtensionMethods
+namespace Reiren.Core.ExtensionMethods
 {
     using Enums;
 

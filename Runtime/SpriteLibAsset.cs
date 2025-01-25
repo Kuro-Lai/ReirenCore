@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 
-namespace ReirenCore
+namespace Reiren.Core
 {
 
     public class SpriteLibAsset : SpriteLibraryAsset

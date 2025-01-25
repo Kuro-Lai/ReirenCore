@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace ReirenCore.VisualElmenents
+namespace Reiren.Core.VisualElmenents
 {
     using ExtensionMethods;
     public class LToggle : VisualElement

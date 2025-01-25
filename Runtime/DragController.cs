@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace ReirenCore
+namespace Reiren.Core
 { 
     /// <summary>
     /// Drag DropHandler für UIs

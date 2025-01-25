@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 
 
-namespace ReirenCore
+namespace Reiren.Core
 {
     /// <summary>
     /// Spielt eine Audiodatei im Editor ab

@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Linq;
 using UnityEditor.Localization;
-using System;
 
-namespace ReirenCore.VisualElmenents
+
+namespace Reiren.Core.VisualElmenents
 {
     public class SearchWindowLocalKey : ScriptableObject, ISearchWindowProvider
     {

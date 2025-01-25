@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEngine;
 
-namespace ReirenCore.VisualElmenents
+namespace Reiren.Core.VisualElmenents
 {
     using ExtensionMethods;
 

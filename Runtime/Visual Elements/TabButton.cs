@@ -1,7 +1,7 @@
 using System;
 using UnityEngine.UIElements;
 
-namespace ReirenCore.VisualElmenents
+namespace Reiren.Core.VisualElmenents
 {
     public class TabButton : Button
     {

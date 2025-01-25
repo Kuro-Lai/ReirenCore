@@ -1,10 +1,9 @@
 using UnityEngine;
 
-namespace ReirenCore
+namespace Reiren.Core
 {
     using Enums;
     using ExtensionMethods;
-    using UnityEditor.Experimental.GraphView;
 
     /// <summary>
     /// Ein Vector, welcher zum Abspeichern mittels JSON verwendet werden kann.

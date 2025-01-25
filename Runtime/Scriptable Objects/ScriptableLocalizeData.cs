@@ -7,7 +7,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 #endif
-namespace ReirenCore.ScriptableObjects
+namespace Reiren.Core.ScriptableObjects
 {
 
 

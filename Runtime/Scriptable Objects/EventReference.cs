@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ReirenCore.ScriptableObjects
+namespace Reiren.Core.ScriptableObjects
 {
     [CreateAssetMenu(menuName = "ReirenCore/Event Reference")]
     public class EventReference : ScriptableObject
