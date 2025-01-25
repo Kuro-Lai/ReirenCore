@@ -1,13 +1,12 @@
 {
-  "name": "com.KuroLai.ReirenCore",
+  "name": "com.kurolai.reiren.core",
   "version": "1.0.0",
   "displayName": "ReirenCore",
   "unity": "2022.3",
   "dependencies": {
-    "com.unity.Localization": "1.5.4"
+    "com.unity.localization": "1.5.4"
   },
   "autor": {
     "name":  "Kuroda-Lailah"
   }
-
 }
