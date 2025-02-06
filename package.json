@@ -4,9 +4,10 @@
   "displayName": "ReirenCore",
   "unity": "2022.3",
   "dependencies": {
-    "com.unity.localization": "1.5.4"
+    "com.unity.localization": "1.5.4",
+    "com.unity.InputSystem": "1.7.0"
   },
-  "autor": {
+  "autohr": {
     "name":  "Kuroda-Lailah"
   }
 }
