@@ -74,7 +74,10 @@ namespace Reiren.Core.Interact
         {
             if(_interactable != null)
             {
-                _interactable.Interact(this);
+                if(_interactableObject == null)
+                    _interactable.Interact(this);
+                else
+                    _interactable.Interact(this, _interactableObject);
             }
         }
 
