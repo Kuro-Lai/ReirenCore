@@ -18,12 +18,14 @@ namespace Reiren.Core.Interact
         {
             Debug.Log($"Interacted: {transform.name}");
             _event.Invoke();
+            _event2.Invoke(interactor.gameObject);
             return true;
         }
 
         public bool Interact(Interactor interactor, GameObject gameObject)
         {
             Debug.Log($"Interacted with Object: {transform.name}");
+            _event.Invoke();
             _event2.Invoke(gameObject);
             return true;
         }

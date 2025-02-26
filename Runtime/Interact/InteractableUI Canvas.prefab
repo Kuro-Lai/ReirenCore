@@ -324,8 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b2fef7ea042ad4d82eab7971a031b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiPanel: {fileID: 0}
-  _promtText: {fileID: 0}
+  _uiPanel: {fileID: 6748228956284523152}
+  _promtText: {fileID: 6717957371648749862}
   IsDisplayed: 0
 --- !u!1 &6748228956284523152
 GameObject:

@@ -11,10 +11,13 @@ namespace Reiren.Core.Interact
         private Camera _mainCam;
         [SerializeField] private GameObject _uiPanel;
         [SerializeField] private TextMeshProUGUI _promtText;
+        public bool IsDisplayed = false;
 
         private void Start()
         {
             _mainCam = Camera.main;
+            _uiPanel.SetActive(false);
+            IsDisplayed = false;
         }
 
         private void LateUpdate()
@@ -23,7 +26,6 @@ namespace Reiren.Core.Interact
             transform.LookAt(transform.position + rotation* Vector3.forward, rotation * Vector3.up);
         }
 
-        public bool IsDisplayed = false;
         public void SetUp(string promtText)
         {
             _promtText.text = promtText;

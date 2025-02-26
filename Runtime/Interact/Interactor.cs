@@ -29,6 +29,7 @@ namespace Reiren.Core.Interact
         {
             _actions = new PlayerInputActions();
             _actions.Player.Interact.performed += InputInteract;
+            _actions.Enable();
         }
 
         // Update is called once per frame
@@ -74,7 +75,6 @@ namespace Reiren.Core.Interact
             if(_interactable != null)
             {
                 _interactable.Interact(this);
-                _interactable.Interact(this, gameObject);
             }
         }
 
