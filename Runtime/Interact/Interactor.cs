@@ -13,7 +13,12 @@ namespace Reiren.Core.Interact
         [SerializeField] private InteractionPromptUI _interactionPromptUI;
         [SerializeField] GameObject _interactableObject;
 
+        [Tooltip("Use the Physics2D Engine instead of Physics")]
         [SerializeField] private bool _2DSystem;
+        [Tooltip("Only include objects with a Z coordinate (depth) greater than or equal to this value.")]
+        [SerializeField] private float _2D_Zmin = -Mathf.Infinity;
+        [Tooltip("Only include objects with a Z coordinate (depth) less than or equal to this value.")]
+        [SerializeField] private float _2D_Zmax = Mathf.Infinity;
 
         private readonly Collider[] _colliders = new Collider[3];
         private readonly Collider2D[] _colliders2D = new Collider2D[3];
@@ -23,7 +28,11 @@ namespace Reiren.Core.Interact
         private IInteractable _interactable = null;
         private PlayerInputActions _actions;
 
-
+        public void Set2Ddepth(float zmin, float zmax)
+        {
+            _2D_Zmin -= zmin;
+            _2D_Zmax -= zmax;
+        }
 
         private void Awake()
         {
@@ -37,7 +46,7 @@ namespace Reiren.Core.Interact
         {
             if (_2DSystem)
             {
-                _numFounds = Physics2D.OverlapCircleNonAlloc(_interactablePoint.position, _interactablePointRadius, _colliders2D, _interactableMask);
+                _numFounds = Physics2D.OverlapCircleNonAlloc(_interactablePoint.position, _interactablePointRadius, _colliders2D, _interactableMask, _2D_Zmin, _2D_Zmax);
             }
             else
             {
@@ -75,7 +84,7 @@ namespace Reiren.Core.Interact
             if(_interactable != null)
             {
                 if(_interactableObject == null)
-                    _interactable.Interact(this);
+                    _interactable.Interact(this, this.gameObject);
                 else
                     _interactable.Interact(this, _interactableObject);
             }
@@ -85,7 +94,7 @@ namespace Reiren.Core.Interact
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(_interactablePoint.position, _interactablePointRadius);
+            Gizmos.DrawWireSphere(_interactablePoint.position, _interactablePointRadius);
         }
     }
 }

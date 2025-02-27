@@ -1,2 +1,2 @@
 # ReirenCore
- Core Funktionen
+ Core Funktionen für sämtliche weiterführenden Pakete
